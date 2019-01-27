@@ -1,0 +1,75 @@
+body{
+    background-color: lightskyblue;
+    font-family: arial;
+    color: white;
+    
+}
+
+#input{
+    width: 75%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 8px 0;
+    background-color: lightskyblue;
+    color: white;
+}
+::placeholder{
+    color:white;
+    
+}
+
+#search-results{
+    display:grid;
+    
+}
+
+.city{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+    "b t p"
+    "x n c";
+    /* box-shadow: 10px 10px 5px grey; */
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    margin: 10px;
+    padding:5px;
+    
+}
+
+.button{
+    text-align: center;
+}
+
+#save {
+    grid-area: b; 
+    justify-items: bottom;
+}
+#delete {
+grid-area: x;
+}
+
+
+
+.cityName {
+    grid-area: n;
+    text-align: center;
+
+}
+.temp{
+    text-align: center;
+    grid-area: t;
+    font-size: 34px;
+}
+.pic{
+    grid-area: p;
+    
+    display: block;
+    margin: auto;
+}
+.condition{
+    grid-area: c;
+    text-align: center;
+}
+
